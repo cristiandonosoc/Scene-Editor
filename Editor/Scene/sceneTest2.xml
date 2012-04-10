@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Scene Description in XML -->
+<scene desc="Simple Test Scene - Triangle + Sphere. Based on test.ray by Mark Tomczak"
+	   author="Raphael Mun">
+	<!-- Background Color and Ambient Light Property -->
+	<background>
+		<color red="0.0" green="0.0" blue="1.0"/>
+		<ambientLight red="1.0" green="1.0" blue="1.0"/>
+	</background>
+
+	<!-- Camera Description -->
+	<camera fieldOfView="45.0" nearClip="0.1" farClip="100.0">
+		<position x="2.0" y="2.0" z="5.0"/>
+		<target x="0.0" y="0.0" z="0.0"/>
+		<up x="0.0" y="1.0" z="0.0"/>
+	</camera>
+
+	<!-- Light Sources Collection -->
+	<light_list>
+		<!-- Light Description, Color & Position -->
+		<light>
+			<color red="1" green="1" blue="1"/>
+			<position x="0.0" y="5.0" z="-5.0"/>
+			<attenuation constant="0.0" linear="0.0" quadratic="0.00"/>
+		</light>
+	</light_list>
+
+	<!-- Material Type Collection -->
+	<material_list>
+		<!-- Material Descriptions -->
+    <material name="GridRed">
+      <texture filename="Images\grid.jpg"/>
+      <diffuse red="1" green="0" blue="0"/>
+      <specular red="0" green="0" blue="0" shininess="1.0"/>
+    </material>
+
+    <material name="GridGreen">
+      <texture filename="Images\grid.jpg"/>
+      <diffuse red="0" green="1" blue="0"/>
+      <specular red="0" green="0" blue="0" shininess="1.0"/>
+    </material>
+
+    <material name="GridBlue">
+      <texture filename="Images\grid.jpg"/>
+      <diffuse red="0" green="0" blue="1"/>
+      <specular red="0" green="0" blue="0" shininess="1.0"/>
+    </material>
+    
+    <material name="Ice">
+      <texture filename="Images\ice.jpg"/>
+      <diffuse red="1" green="1" blue="1"/>
+      <specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+    </material>
+
+    <material name="Fire">
+      <texture filename="Images\fire.jpg"/>
+      <diffuse red="1" green="1" blue="1"/>
+      <specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+    </material>
+
+    <material name="Smoke">
+      <texture filename="Images\smoke.jpg"/>
+      <diffuse red="1" green="1" blue="1"/>
+      <specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+    </material>
+
+    <material name="barco">
+      <texture filename="Images\barco.jpg"/>
+      <diffuse red="1" green="1" blue="1"/>
+      <specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+    </material>
+    
+		<material name="Purple">
+			<texture filename=""/>
+			<diffuse red="0.5" green="0.0" blue="0.5"/>
+			<specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+		</material>
+
+    <material name="Green">
+      <texture filename=""/>
+      <diffuse red="0.0" green="1.0" blue="0.0"/>
+      <specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+    </material>
+
+    <material name="Blue">
+      <texture filename=""/>
+      <diffuse red="0.0" green="0.0" blue="1.0"/>
+      <specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+    </material>
+
+		<material name="Red">
+			<texture filename=""/>
+			<diffuse red="1.0" green="0.0" blue="0.0"/>
+			<specular red="0.5" green="0.0" blue="0.0" shininess="5.0"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+
+		<material name="White">
+			<texture filename=""/>
+			<diffuse red="1.0" green="1.0" blue="1.0"/>
+			<specular red="1.0" green="1.0" blue="1.0" shininess="1.0"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+	</material_list>
+
+	<!-- List of Scene Objects -->
+  <object_list>
+    
+  </object_list>
+	
+<!-- End of Scene -->
+</scene>

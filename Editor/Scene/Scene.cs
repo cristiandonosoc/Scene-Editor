@@ -1,0 +1,673 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Editor.Figures;
+using Editor.Lighting;
+using Editor.Menues;
+using System.Xml.Linq;
+using System.Globalization;
+using Utilities;
+using System.Xml;
+using System.Threading;
+using System.Drawing;
+using System.IO;
+
+namespace Editor.Scene
+{
+
+	
+    public class Scene
+    {
+        /// <summary>
+        /// Valor utilizado para definir que no se ha editado un valor.
+        /// Se buscó un valor rebuscado.
+        /// TODO: Encontrar una mejor manera de hacer esto.
+        /// </summary>
+        public static float UNDEFINED = -9999.8875f;
+
+        /// <summary>
+        /// Atributos de la clase
+        /// </summary>
+        public CultureInfo SceneCultureInfo { get; set; }
+        public Camera SceneCamera { get; private set; }
+        public List<Figure> SceneFigures { get; private set; }
+        public List<Light> SceneLights { get; private set; }
+        public Dictionary<string, Material> MaterialDictionary { get; set; }
+        public int WIDTH { get; set; }
+        public int HEIGHT { get; set; }
+		
+		// Edición de propiedades
+		public SceneState sceneState {get; set;}
+		public Button SelectedButton {get; set;}
+		public string InputString {get; set;}
+        public FigureEnum FigureToCreate { get; set; }
+
+        public Figure SelectedFigure { get; private set; }
+
+        /// <summary>
+        /// Cantidad de luces que la escena aguanta. 8 es el valor estándar de este programa ya que OpenGL asegura que,
+        /// para todo sistema, habrán a lo menos 8 luces disponibles. Si hay o no más luces dependerá exclusivamente
+        /// de las capacidades de la tarjeta gráfica (este límite hacía sentido hace bastante tiempo ya, ahora no tanto).
+        /// </summary>
+        protected int lightLimit = 8;
+
+        public Scene(int width, int height)
+        {
+            this.SceneCamera = new Camera();
+            this.SceneFigures = new List<Figure>();
+            this.SceneLights = new List<Light>();
+            this.MaterialDictionary = new Dictionary<string, Material>();
+
+            //SceneFigures.Add(new Axis());
+
+            this.SceneCultureInfo = CultureInfo.InvariantCulture;
+            Thread.CurrentThread.CurrentCulture = this.SceneCultureInfo;
+            Thread.CurrentThread.CurrentUICulture = this.SceneCultureInfo;
+			
+			this.sceneState = SceneState.Free;
+            this.FigureToCreate = FigureEnum.None;
+
+            this.WIDTH = width;
+            this.HEIGHT = height;
+            AddFigure(new Axis());
+        }
+
+
+        protected byte redId = 1;
+        protected byte blueId = 0;
+        protected byte greenId = 0;
+        protected int figureCount = 0;
+        /// <summary>
+        /// Agrega una figura a la lista. La gracia está es que cada figura tiene un color único asignado, provisto
+        /// por la escena. Esto sirve para tener una manera de identificar las figuras al momento de seleccionar.
+        /// </summary>
+        /// <param name="figure"></param>
+        public void AddFigure(Figure figure)
+        {
+            // Le asignamos el color único a la figura
+            figure.Color = new Vector(redId, blueId, greenId) / (float)255;
+            // Hay que darlo vuelta B y G por que OpenGL, por alguna razón los lee distinto
+            figure.ColorByte = new byte[3] { (byte)redId, (byte)blueId, (byte)greenId };
+
+            // Creamos el próximo color único
+            redId++;
+            if (redId == 250)
+            {
+                redId = 0;
+                greenId++;
+                if (greenId == 250)
+                {
+                    greenId = 0;
+                    blueId++;
+                }
+            }
+
+            if (figure.Name == "")
+                figure.Name = figure.ToString() + "_" + figureCount++;
+
+            SceneFigures.Add(figure);
+        }
+
+        public void DeleteSelectedFigure()
+        {
+            if (SelectedFigure != null)
+            {
+                SceneFigures.Remove(SelectedFigure);
+                SelectedFigure = null;
+            }
+        }
+
+        public Figure FindFigure(byte[] color)
+        {
+            foreach (Figure figure in SceneFigures)
+            {
+                byte[] figureColor = figure.ColorByte;
+                bool match = true;
+                for (int i = 0; match && i < 3; i++)
+                    if (color[i] != figureColor[i])
+                        match = false;
+                if (match)
+                    return figure;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Método que marca una figura como seleccionada. Además desmarca la figura seleccionada anteriormente.
+        /// Se asume, por diseño con contratos, que es una figura válida.
+        /// </summary>
+        /// <param name="figure">La figura a seleccionar</param>
+        public void SelectFigure(Figure figure)
+        {
+            // Desmarcamos la figura anterior
+            if(SelectedFigure != null)
+                SelectedFigure.isSelected = false;
+
+            // Marcamos la figura actual
+            SelectedFigure = figure;
+            SelectedFigure.isSelected = true;
+        }
+
+        #region SCENE LOAD
+
+        #region LOAD HELPERS
+        
+        // Métodos que ayudan a cargar elementos desde el XML
+
+        protected float LoadFloat(XElement node, string attribute)
+        {
+            if (node == null)
+                return 0;
+            float value = 0;
+            float.TryParse(node.Attribute(attribute).Value, NumberStyles.Number, SceneCultureInfo, out value);
+            //value = (float)LoadDouble(node, attribute);
+            return value;
+        }
+
+        private double LoadDouble(XElement node, string attribute)
+        {
+            if (node == null)
+                return 0;
+            double value = 0;
+            double.TryParse(node.Attribute(attribute).Value, NumberStyles.Number, SceneCultureInfo, out value);
+            //value = XmlConvert.ToDouble(node.Attribute(attribute).Value);
+            return value;
+        }
+
+        protected Vector LoadXYZFloat(XElement node)
+        {
+            if (node == null)
+                return null;
+            return new Vector(LoadFloat(node, "x"), LoadFloat(node, "y"), LoadFloat(node, "z"));
+        }
+
+        protected Vector LoadXYZDouble(XElement node)
+        {
+            if (node == null)
+                return null;
+            return new Vector(LoadDouble(node, "x"), LoadDouble(node, "y"), LoadDouble(node, "z"));
+        }
+
+        protected Vector LoadColor(XElement node)
+        {
+            if(node == null)
+                return null;
+            return new Vector(LoadFloat(node, "red"), LoadFloat(node, "green"), LoadFloat(node, "blue"));
+        }
+
+        private Vector LoadSpecular(XElement node)
+        {
+            if (node == null)
+                return null;
+            return new Vector(LoadFloat(node, "red"), LoadFloat(node, "green"), LoadFloat(node, "blue"), LoadFloat(node, "shininess"));
+        }
+
+        /// <summary>
+        /// Carga un atributo genérico desde un nodo XML
+        /// </summary>
+        /// <param name="node">El nodo</param>
+        /// <param name="attribute">El nombre del atributo a buscar</param>
+        /// <returns>El atributo (Ojo que es un .NET Object, hay que hacer un parsing para usarlo)</returns>
+        protected Object LoadAttribute(XElement node, string attribute)
+        {
+            if (node == null)
+                return 0;
+            Object value = node.Attribute(attribute).Value;
+            return value;
+        }
+
+        #endregion LOAD HELPERS
+
+        /// <summary>
+        /// Método que carga una escena desde una archivo con formato XML
+        /// </summary>
+        /// <param name="fileName">El nombre del archivo XML con la escena</param>
+        public void Load(string fileName)
+        {
+            // Cargamos el documento
+            if (File.Exists(fileName))
+            {
+                XDocument xmlDoc = XDocument.Load(fileName);
+                // Cargamos la primera escena presente en el archivo.
+                // Modificando esta línea, es posible cargar otras escenas en un mismo archivo.
+                XElement xmlScene = xmlDoc.Elements("scene").First();
+
+                // CAMERA LOAD
+                LoadCamera(xmlScene);
+
+                // FIGURES LOAD
+                LoadFigures(xmlScene);
+
+                // LIGHTS LOAD
+                LoadLights(xmlScene);
+
+                // LAS SIGUIENTES FUNCIONALIDADES AÚN NO ESTÁN ANDANDO
+                // MATERIAL LOAD
+                LoadMaterials(xmlScene);
+
+                //ADD OBJ OBJECTS
+                //ReadObjFiles(xmlScene);
+            }
+            else
+            {
+                // Si no hay archivo que cargar, cargamos los valores por default
+                LoadCamera();
+                LoadLights();
+            }
+        }
+
+        /// <summary>
+        /// Método que carga los datos de la cámara desde la especificación XML
+        /// 
+        /// La carga aún no está perfecta, ya que ignora el dato position, ya que lo calcula
+        /// internamente usando coordenadas esféricas (ver implementación de la cámara). 
+        /// Por mientras la cámara va a tener que ser ajustada manualmente.
+        /// 
+        /// </summary>
+        /// <param name="xmlScene">La escena cargada desde XML</param>
+        protected void LoadCamera(XElement xmlScene = null)
+        {
+            if (xmlScene != null && xmlScene.Elements("camera").Any())
+            {
+                // Cargamos la primera cámara que encontramos en el archivo
+                XElement xmlCamera = xmlScene.Elements("camera").First();
+
+                // Cargamos los datos a la cámara
+                // (Me dió lata hacer uso de algún patrón de diseño más bonito)
+                SceneCamera.FOV = LoadFloat(xmlCamera, "fieldOfView");
+                SceneCamera.NearClip = LoadFloat(xmlCamera, "nearClip");
+                SceneCamera.FarClip = LoadFloat(xmlCamera, "farClip");
+                //SceneCamera.Position = LoadXYZFloat(xmlCamera.Elements("position").First());
+                Vector Target = LoadXYZFloat(xmlCamera.Elements("target").First());
+                Vector Position = LoadXYZFloat(xmlCamera.Elements("position").First());
+                SceneCamera.Target = Target;
+                SceneCamera.Radius = (Target - Position).Magnitude3();
+                SceneCamera.Up = LoadXYZFloat(xmlCamera.Elements("up").First());
+                // Calculamos la posición a partir de los datos ya especificados
+                SceneCamera.CalculatePosition();
+            }
+            else
+            {
+                // Cargamos los datos default a la cámara
+                SceneCamera.FOV = 45.0f;
+                SceneCamera.NearClip = 0.1f;
+                SceneCamera.FarClip = 200.0f;
+                Vector Target = new Vector();
+                SceneCamera.Target = Target;
+                Vector Position = new Vector(25, 0, 0);
+                SceneCamera.Radius = (Target - Position).Magnitude3();
+                SceneCamera.Up = new Vector(0, 1, 0);
+                // Calculamos la posición a partir de los datos ya especificados
+                SceneCamera.CalculatePosition();
+            }
+        }
+
+        /// <summary>
+        /// Método que carga los objetos válidos dentro del archivo XML seleccionado
+        /// </summary>
+        /// <param name="xmlScene">La escena en XML</param>
+        protected void LoadFigures(XElement xmlScene = null)
+        {
+            if (xmlScene != null && xmlScene.Elements("object_list").Any())
+            {
+                // Obtenemos el nodo que contiene la lista de elementos
+                XElement xmlObjects = xmlScene.Elements("object_list").First();
+
+                // CARGAMOS FIGURAS
+                // Triángulos
+                foreach (XElement xmlTriangle in xmlObjects.Elements("triangle"))
+                    LoadTriangle(xmlTriangle);
+
+                // Esfera
+                foreach (XElement xmlSphere in xmlObjects.Elements("sphere"))
+                    LoadSphere(xmlSphere);
+
+            }
+        }
+
+        #region FIGURE LOAD HELPERS
+
+        /// <summary>
+        /// Carga un triángulo a la lista de figuras de la escena
+        /// </summary>
+        /// <param name="xmlTriangle">El nodo XML con el triángulo</param>
+        protected void LoadTriangle(XElement xmlTriangle)
+        {
+            // Cargamos los datos del triángulo
+            string name = xmlTriangle.Attribute("name").Value;
+            if (name == "sphere_triangle_26")
+                name = "sphere_!";
+            Vector scale = LoadXYZDouble(xmlTriangle.Elements("scale").First());
+            Vector rotation = LoadXYZDouble(xmlTriangle.Elements("rotation").First());
+            Vector position = LoadXYZDouble(xmlTriangle.Elements("position").First());
+            List<Vector> vertexList = new List<Vector>(3);
+            List<Vector> normalList = new List<Vector>(3);
+
+            // Cargamos la información de los vértices
+            foreach (XElement vertexNode in xmlTriangle.Elements("vertex"))
+            {
+                // TODO: Material
+                string hola = "";
+                Vector vertex = LoadXYZDouble(vertexNode.Elements("position").First());
+                if(vertex.x > 100 || vertex.y > 100 || vertex.z > 100)
+                    hola = "hola";
+                vertexList.Add(vertex);
+                normalList.Add(LoadXYZDouble(vertexNode.Elements("normal").First()));
+
+                // TODO: UV, Texture
+            }
+
+            // Creamos el triángulo
+            Triangle triangle = new Triangle(name, vertexList, normalList);
+            triangle.Scaling = scale;
+            triangle.Rotation = rotation;
+            triangle.Traslation = position;
+
+            // Lo agregamos a la lista de figuras
+            //SceneFigures.Add(triangle);
+            AddFigure(triangle);
+        }
+
+        protected void LoadSphere(XElement xmlSphere)
+        {
+            float radius = LoadFloat(xmlSphere, "radius");
+            // TODO: Material
+            Vector position = LoadXYZDouble(xmlSphere.Elements("position").First());
+            Vector rotation = LoadXYZDouble(xmlSphere.Elements("rotation").First());
+            Vector scale = LoadXYZDouble(xmlSphere.Elements("scale").First());
+            Vector center = LoadXYZDouble(xmlSphere.Elements("center").First());
+
+            Sphere sphere = new Sphere(center: center, Radius: radius);
+            sphere.Traslation = position;
+            sphere.Rotation = rotation;
+            sphere.Scaling = scale;
+
+            // Cargamos la esfera a la escena
+            //SceneFigures.Add(sphere);
+            AddFigure(sphere);
+        }
+
+        #endregion FIGURE LOAD HELPERS
+
+        /// <summary>
+        /// Carga las luces que van a ser utilizadas en la escena
+        /// </summary>
+        /// <param name="xmlScene">La escena en XML</param>
+        private void LoadLights(XElement xmlScene = null)
+        {
+            if (xmlScene != null && xmlScene.Elements("light_list").Any())
+            {
+                // Obtenemos el elemento con las luces
+                XElement xmlLights = xmlScene.Elements("light_list").First();
+
+                foreach (XElement xmlLight in xmlLights.Elements("light"))
+                {
+                    Vector position = LoadXYZDouble(xmlLight.Elements("position").First());
+                    Vector color = LoadColor(xmlLight.Elements("color").First());
+                    XElement attenuation = xmlLight.Elements("attenuation").First();
+                    float quadratic = LoadFloat(attenuation, "quadratic");
+                    float linear = LoadFloat(attenuation, "linear");
+                    float constant = LoadFloat(attenuation, "constant");
+
+                    // Creamos la luz
+                    if (SceneLights.Count <= lightLimit)
+                    {
+                        Light light = new Light(position,
+                                                diffuse: color,
+                                                constantAttenuation: new Vector(constant, constant, constant),
+                                                linearAttenuation: new Vector(linear, linear, linear),
+                                                quadraticAttenuation: new Vector(quadratic, quadratic, quadratic));
+                        SceneLights.Add(light);
+                    }
+                }
+            }
+            else
+            {
+                Vector position = new Vector(0, 5, 0);
+                Vector color = new Vector(1, 1, 1);     // Luz blanca
+                float quadratic = 0;
+                float linear = 0;
+                float constant = 0.01f;
+
+                Light light = new Light(position,
+                                        diffuse: color,
+                                        constantAttenuation: new Vector(constant, constant, constant),
+                                        linearAttenuation: new Vector(linear, linear, linear),
+                                        quadraticAttenuation: new Vector(quadratic, quadratic, quadratic));
+                SceneLights.Add(light);
+            }
+        }
+
+        /// <summary>
+        /// Carga los materiales (texturas) y los inserta en un diccionario, para que puedan ser usados por las figuras.
+        /// 
+        /// NO USABLE AÚN
+        /// </summary>
+        /// <param name="xmlScene">El XML de la escena</param>
+        private void LoadMaterials(XElement xmlScene)
+        {
+            if (xmlScene != null && xmlScene.Elements("material_list").Any())
+            {
+                XElement xmlMaterials = xmlScene.Elements("material_list").First();
+                foreach (XElement materialNode in xmlMaterials.Elements("material"))
+                {
+                    string name = materialNode.Attribute("name").Value;
+                    Material material = new Material(name);
+                    // El nombre del archivo con la textura
+                    if (materialNode.Elements("texture").Any())
+                        material.FileName = materialNode.Elements("texture").First().Attribute("filename").Value;
+                    // Si existe la textura, la cargamos
+                    if (material.FileName != null && material.FileName != String.Empty && File.Exists(material.FileName))
+                        material.TextureImage = (Bitmap)Bitmap.FromFile(material.FileName);
+
+                    // CARGAMOS DISTINTAS PROPIEDADES DEL MATERIAL
+                    // Como ustedes deciden usar estas propiedades en sus raytracers depende de ustedes.
+                    // Specular
+                    if (materialNode.Elements("specular").Any())
+                        material.Specular = LoadSpecular(materialNode.Elements("specular").First());
+                    // Difuso
+                    if (materialNode.Elements("diffuse").Any())
+                        material.Diffuse = LoadColor(materialNode.Elements("diffuse").First());
+                    // Transparencia
+                    if (materialNode.Elements("transparent").Any())
+                        material.Transparent = LoadColor(materialNode.Elements("transparent").First());
+                    // Reflectividad
+                    if (materialNode.Elements("reflective").Any())
+                        material.Reflective = LoadColor(materialNode.Elements("reflective").First());
+                    // Índice de refracción
+                    if (materialNode.Elements("refraction_index").Any())
+                        material.RefractionIndex = LoadColor(materialNode.Elements("refraction_index").First());
+
+                    // Agregamos el material al diccionario
+                    MaterialDictionary.Add(name, material);
+                }
+            }
+
+            // Agregamos nuestro material default (amarillo)
+            Material materialDefault = new Material("Yellow");
+            materialDefault.FileName = "";
+            materialDefault.Diffuse = new Vector(1, 1, 0);
+            materialDefault.Specular = new Vector(0, 0, 0, 5);
+            MaterialDictionary.Add("Yellow", materialDefault);
+
+
+        }
+
+        /// <summary>
+        /// Carga modelos OBJ. Si bien se importa bien el modelo, no hay funcionalidades implementadas aún
+        /// para manejar de manera efectiva un modelo.
+        /// </summary>
+        /// <param name="xmlScene">El XML de la escena</param>
+        protected void ReadObjFiles(XElement xmlScene)
+        {
+            string name = "OBJ-Load:";
+            int nameIndex = 0;
+
+            //TODO: Load ALL OBJ files
+            string fileName = "Scene/teapot.obj";
+            if (System.IO.File.Exists(fileName))
+            {
+                using (System.IO.StreamReader sr = System.IO.File.OpenText(fileName))
+                {
+                    List<Vector> vertexBuffer = new List<Vector>();						// Allocate memory for the verteces
+                    List<Vector> Faces_Triangles = new List<Vector>();          		// Allocate memory for the triangles
+                    List<Vector> normals = new List<Vector>();				           	// Allocate memory for the normals
+
+                    string line;
+
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (line.Length < 1)
+                        {
+                            continue;
+                        }
+
+                        if (line[0] == 'v')										// The first character is a v: on this line is a vertex stored.
+                        {
+                            string[] splittedLine = line.Split(' ');
+
+                            vertexBuffer.Add(new Vector(float.Parse(splittedLine[1]), float.Parse(splittedLine[2]), float.Parse(splittedLine[3])));
+                        }
+                        else if (line[0] == 'f')										// The first character is a f: on this line is a face.
+                        {
+                            string[] splittedLine = line.Split(' ');
+                            int[] vertexNumber = new int[3];
+
+                            vertexNumber[0] = int.Parse(splittedLine[1]) - 1;                // OBJ file starts counting from 1
+                            vertexNumber[1] = int.Parse(splittedLine[2]) - 1;
+                            vertexNumber[2] = int.Parse(splittedLine[3]) - 1;
+
+                            Vector vector1 = vertexBuffer[vertexNumber[0]];
+                            Vector vector2 = vertexBuffer[vertexNumber[1]];
+                            Vector vector3 = vertexBuffer[vertexNumber[2]];
+                            Vector normal = calculateNormal(vector1, vector2, vector3);
+
+                            List<Vector> vertexList = new List<Vector>(3);
+                            vertexList.Add(vector1);
+                            vertexList.Add(vector2);
+                            vertexList.Add(vector3);
+                            List<Vector> normalList = new List<Vector>(3);
+                            normalList.Add(normal);
+                            normalList.Add(normal);
+                            normalList.Add(normal);
+
+                            Triangle triangle = new Triangle(name + nameIndex++, vertexList, normalList);
+                            AddFigure(triangle);
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        #endregion SCENE LOAD
+
+        /// <summary>
+        ///  Método que guarda una escena en un archivo con formato XML.
+        ///  Solo después de haber escrito toda la funcionalidad descubrí que hay una funcionalidad
+        ///  llamada XMLSerializer que hace exactamente esto de manera más o menos automática. En fin...
+        /// </summary>
+        /// <param name="fileName">Nombre del archivo</param>
+        public void Save(string fileName)
+        {
+            XDocument xmlDoc = new XDocument();
+            xmlDoc.Declaration = new XDeclaration("1.0", "UTF-8", "yes");
+
+            XElement xmlScene = new XElement("scene");
+            xmlScene.SetAttributeValue("desc", "Escena generada con editor DonoShop IV: La revancha de los editores de 1997");
+            xmlScene.SetAttributeValue("author", "Cristián Donoso");
+
+            // Agregamos un background negro
+            XElement background = new XElement("background");
+            background.Add(MathUtils.GetRGBElement("color", new Vector())); // Background color negro
+            background.Add(MathUtils.GetRGBElement("ambientLight", new Vector(1, 1, 1)));   // Luz ambiente blanca
+            xmlScene.Add(background);
+
+            // Agregamos la camara
+            SceneCamera.Save(xmlScene);
+
+            // Agregamos las luces
+            SaveLights(xmlScene);
+
+            // Agregamos los materiales
+            SaveMaterials(xmlScene);
+
+            // Agregamos las figuras
+            SaveFigures(xmlScene);
+
+            // Agregamos la escena al documento
+            xmlDoc.Add(xmlScene);
+            xmlDoc.Save(fileName);
+        }
+
+        
+
+        private void SaveFigures(XElement xmlScene)
+        {
+            // Creamos el nodo que va a recibir las figuras
+            XElement xmlObjects = new XElement("object_list");
+
+            // Agregamos las figuras ocupando la magia del POLIMORFISMO
+            foreach (Figure figure in SceneFigures)
+                figure.Save(xmlObjects);
+
+            // Agregamos las figuras a la escena
+            xmlScene.Add(xmlObjects);
+        }
+
+        protected void SaveLights(XElement xmlScene)
+        {
+            // Creamos el nodo que va a tener las luces
+            XElement xmlLightList = new XElement("light_list");
+
+            // Agregamos cada luz a esta escena
+            foreach (Light light in SceneLights)
+                light.Save(xmlLightList);
+
+            // Agregamos la lista de luces a la escena
+            xmlScene.Add(xmlLightList);
+        }
+
+        private void SaveMaterials(XElement xmlScene)
+        {
+            // Creamos el nodo de los materiales
+            XElement xmlMaterialList = new XElement("material_list");
+
+            foreach (KeyValuePair<string, Material> pair in MaterialDictionary)
+                pair.Value.Save(xmlMaterialList);
+
+            xmlScene.Add(xmlMaterialList);
+        }
+
+
+
+        protected Vector calculateNormal( Vector coord1, Vector coord2, Vector coord3 )
+        {
+           /* calculate Vector1 and Vector2 */
+            float[] va = new float[3], vb = new float[3], vr = new float[3];
+           double val;
+
+           va[0] = coord1[0] - coord2[0];
+           va[1] = coord1[1] - coord2[1];
+           va[2] = coord1[2] - coord2[2];
+ 
+           vb[0] = coord1[0] - coord3[0];
+           vb[1] = coord1[1] - coord3[1];
+           vb[2] = coord1[2] - coord3[2];
+ 
+           /* cross product */
+           vr[0] = va[1] * vb[2] - vb[1] * va[2];
+           vr[1] = vb[0] * va[2] - va[0] * vb[2];
+           vr[2] = va[0] * vb[1] - vb[0] * va[1];
+ 
+           /* normalization factor */
+           val = Math.Sqrt( vr[0]*vr[0] + vr[1]*vr[1] + vr[2]*vr[2] );
+ 
+	        Vector norm = new Vector(vr[0]/val, vr[1]/val, vr[2]/val);
+ 	        return norm;
+        }
+    }
+}

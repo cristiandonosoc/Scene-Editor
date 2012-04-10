@@ -1,0 +1,84 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Utilities;
+using Tao.OpenGl;
+using Editor.Scene;
+
+namespace Editor.Menues
+{
+    class InfoMenu : BaseMenu
+    {
+        public InfoMenu(int width, int height, int offsetX, int offsetY)
+            : base(width, height, offsetX, offsetY, 10)
+        {
+            outerColor = new Vector(0.4, 0.4, 0.4);
+            innerColor = new Vector(0.7, 0.7, 0.7);
+        }
+         
+        public override void Draw(Scene.Scene scene)
+        {
+            // Dibujamos el fondo del menú
+            DrawMenuBox();
+
+            if (scene.SelectedFigure != null)
+                scene.SelectedFigure.Print(scene, 2 * Margin, 2 * Margin);
+        }
+
+        /// <summary>
+        /// Dibuja la caja de fondo del menú
+        /// </summary>
+        protected void DrawMenuBox()
+        {
+            // Vamos a estar haciendo un menú, por lo cual usamos un modo 2D
+            Gl.glMatrixMode(Gl.GL_PROJECTION);
+            Gl.glLoadIdentity();
+            Gl.glOrtho(0, WIDTH, HEIGHT, 0, 0, 1);  // Proyección Ortogonal para no preocuparnos de la profundidad
+
+            // Cambiamos el viewport al pedazo que nos corresponde
+            Gl.glViewport(OffsetX, OffsetY, WIDTH, HEIGHT);
+
+            // Dibujamos el layout del menu
+            Gl.glBegin(Gl.GL_QUADS);
+
+            // Dibujamos el margen
+            Gl.glColor3fv(MathUtils.GetVector3Array(outerColor));
+            Gl.glVertex2d(0, 0);
+            Gl.glVertex2d(WIDTH, 0);
+            Gl.glVertex2d(WIDTH, HEIGHT);
+            Gl.glVertex2d(0, HEIGHT);
+
+            // El rectángulo que tiene la información
+            Gl.glColor3fv(MathUtils.GetVector3Array(innerColor));
+            Gl.glVertex2d(Margin, Margin);
+            Gl.glVertex2d(WIDTH - Margin, Margin);
+            Gl.glVertex2d(WIDTH - Margin, HEIGHT - Margin);
+            Gl.glVertex2d(Margin, HEIGHT - Margin);
+
+            Gl.glEnd();
+        }
+
+		/// <summary>
+		/// Método que maneja el input del menu
+		/// </summary>
+		/// <param name='scene'>La clase que representa la escena</param>
+		public override void KeyboardInput(Scene.Scene scene, byte key, int x, int y)
+		{
+			
+		}
+		
+		public override void MouseInput(Scene.Scene scene, int button, int state, int x, int y)
+		{
+			
+			
+			// Obtenemos la figura seleccionada y vemos si apretamos alguno de los botones
+			if(scene.SelectedFigure != null)
+			{
+				scene.SelectedFigure.MouseMenuInput(scene, button, state, x, y);
+				
+			}
+			
+		}
+    }
+}
