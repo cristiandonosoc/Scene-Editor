@@ -67,7 +67,7 @@ namespace Editor
             // Creamos los menues
             // ES IMPORTANTE QUE <InfoMenu> VAYA PRIMERO
             int bottomHeight = 50;
-            menuList.Add(new InfoMenu(300, scene.HEIGHT, 0, bottomHeight));
+            menuList.Add(new InfoMenu(300, scene.HEIGHT - 20, 0, bottomHeight + 20));
             // TODO: Generalizar los offsets
             menuList.Add(new BottomMenu(scene.WIDTH+menuList[0].WIDTH, bottomHeight, 0, 0));
 
@@ -79,7 +79,7 @@ namespace Editor
             // Hacemos la ventana algo más grande que el viewport de escena para tener
             // como mostrar información extra
             Glut.glutInitWindowSize(scene.WIDTH + menuList[0].WIDTH, scene.HEIGHT + menuList[1].HEIGHT);
-            Glut.glutInitWindowPosition(100, 100);
+            Glut.glutInitWindowPosition(100, 10);
 
             // Creamos el display
             int id = Glut.glutCreateWindow("Scene Editor");
@@ -114,7 +114,7 @@ namespace Editor
         static void Init()
         {
             // Inicializamos la escena desde archivo
-            scene.Load("Scene/sceneInfo.xml");
+            scene.Load("Scene/sceneTest.xml");
 
             //scene.Save("Scene/output.xml");
 

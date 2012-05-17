@@ -7,9 +7,9 @@ namespace Utilities
 {
     public class Vector
     {
-        public float x { get; private set; }
-        public float y { get; private set; }
-        public float z { get; private set; }
+        public float x { get;  set; }
+        public float y { get;  set; }
+        public float z { get;  set; }
         public float w { get; set; }
 
         

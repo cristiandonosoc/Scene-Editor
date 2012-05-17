@@ -1,0 +1,5807 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<scene desc="Info para la escena" author="Cristián Donoso">
+
+  <camera fieldOfView="45,0" nearClip="1" farClip="20">
+    <position x="2.0" y="2.0" z="5.0"/>
+    <target x="1.0" y="1.0" z="1.0"/>
+    <up x="0" y="1.0" z="0"/>
+  </camera>
+  <camera farClip="200" nearClip="1" fieldOfView="45">
+    <position x="0" y="0" z="100" />
+    <target x="0" y="0" z="0" />
+    <up x="0" y="1" z="0" />
+  </camera>
+  <object_list>
+
+    <!-- Triangle Object -->
+
+    <triangle name="Triangle5">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="1.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle6">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="2.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle7">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="1.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle8">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="2.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle9">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="2.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="2.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle10">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="2.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="2.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle11">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="1.5" y="-5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="1.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle12">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="1.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="1.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle1">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="1.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle2">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="2.5" y="-5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle3">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="1.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="Triangle4">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="Green">
+        <position x="2.5" y="5" z="5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="Red">
+        <position x="2.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="White">
+        <position x="1.5" y="5" z="-5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_16">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_17">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_18">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_19">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_20">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_21">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_22">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_23">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_24">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_25">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_26">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_27">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_28">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_29">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_30">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_31">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_48">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_49">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_50">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_51">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_52">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_53">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_54">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_55">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_56">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_57">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_58">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_59">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_60">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_61">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_62">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_63">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_80">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_81">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_82">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_83">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_84">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_85">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_86">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_87">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="000000" z="-1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_88">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="000000" z="-1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_89">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="000000" z="-1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_90">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_91">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_92">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_93">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_94">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_95">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_112">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_113">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_114">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_115">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_116">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_117">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_118">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="000000" z="-1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_119">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="000000" z="-1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="-382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_120">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="-382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="000000" z="-1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_121">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="-382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_122">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="000000" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_123">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_124">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="000000" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_125">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_126">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_127">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="000000" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_144">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_145">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_146">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_147">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_148">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_149">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_150">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="-382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_151">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="-382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="-707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_152">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="-707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="-382683" z="-923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_153">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="-707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_154">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="-382683" z="-853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_155">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_156">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-382683" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_157">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_158">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_159">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="-382683" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_176">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_177">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_178">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_179">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_180">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_181">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_182">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="-707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_183">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="-707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="-923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_184">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="-923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="-707107" z="-707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_185">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-000000" y="-923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_186">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="-707107" z="-653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_187">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_188">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="-707107" z="-500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_189">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_190">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_191">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-707107" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_192">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_201">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_202">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_203">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_204">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_205">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_206">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_207">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_216">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_217">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_218">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_219">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-000000" y="-923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_220">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-000000" y="-923880" z="-382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_221">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="-923880" z="-353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_222">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="-923880" z="-270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_223">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="-923880" z="-146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+
+
+    <triangle name="sphere_triangle_0">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_1">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_2">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_3">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_4">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_5">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_6">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_7">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_8">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_9">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_10">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_11">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_12">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_13">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_14">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_15">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_32">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_33">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_34">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_35">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_36">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_37">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_38">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_39">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_40">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_41">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_42">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_43">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_44">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_45">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_46">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_47">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_64">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_65">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_66">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_67">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_68">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_69">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_70">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_71">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="000000" z="1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_72">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="000000" z="1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_73">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="000000" z="1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_74">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_75">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_76">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_77">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_78">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_79">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_96">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_97">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_98">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_99">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_100">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_101">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_102">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="000000" z="1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_103">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="000000" z="1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="-382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_104">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="000000" z="1.000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_105">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_106">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="000000" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_107">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_108">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="000000" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_109">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_110">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="000000" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_111">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-1.000000" y="000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_128">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_129">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_130">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_131">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_132">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_133">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_134">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="-382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_135">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="-382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="-707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_136">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="-382683" z="923880"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_137">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_138">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="-382683" z="853553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_139">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_140">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-382683" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_141">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_142">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-853553" y="-382683" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_143">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-923880" y="-382683" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_160">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_161">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_162">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_163">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_164">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_165">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_166">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="-707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_167">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="-707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="-923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_168">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="-707107" z="707107"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_169">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_170">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="-707107" z="653281"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_171">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_172">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-500000" y="-707107" z="500000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_173">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_174">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-653281" y="-707107" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_175">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="-353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-707107" y="-707107" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_193">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_194">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_195">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_196">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_197">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_198">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_199">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_200">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-382683" y="923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_208">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_209">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_210">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_211">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="000000" y="-923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_212">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="000000" y="-923880" z="382683"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_213">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-146447" y="-923880" z="353553"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_214">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-270598" y="-923880" z="270598"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="sphere_triangle_215">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <vertex index="0" material="Red">
+        <position x="000000" y="-1.000000" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="1" material="Blue">
+        <position x="-353553" y="-923880" z="146447"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <vertex index="2" material="Green">
+        <position x="-382683" y="-923880" z="000000"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="TriangleTextured1">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="barco">
+        <position x="-8.0" y="-2.0" z="-10"/>
+        <normal x="-1.0" y="0" z="1.0"/>
+        <texture u="0" v="1.0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="barco">
+        <position x="-4.0" y="-2.0" z="-10"/>
+        <normal x="1.0" y="0" z="1.0"/>
+        <texture u="1.0" v="1.0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="barco">
+        <position x="-6.0" y="2.0" z="-10"/>
+        <normal x="0" y="1.0" z="1.0"/>
+        <texture u="1.0" v="0"/>
+      </vertex>
+    </triangle>
+
+    <triangle name="TriangleTextured2">
+      <scale x="1.0" y="1.0" z="1.0" />
+      <rotation x="0" y="0" z="0" />
+      <position x="0" y="0" z="0" />
+      <!--  First Vertex -->
+      <vertex index="0" material="Ice">
+        <position x="2.0" y="-2.0" z="-8.0" />
+        <normal x="-1.0" y="0" z="1.0" />
+        <texture u="0" v="0" />
+      </vertex>
+      <!--  Second Vertex -->
+      <vertex index="1" material="Fire">
+        <position x="6.0" y="-2.0" z="-8.0" />
+        <normal x="1.0" y="0" z="1.0" />
+        <texture u="0" v="1.0" />
+      </vertex>
+      <!--  Third Vertex -->
+      <vertex index="2" material="Smoke">
+        <position x="4.0" y="2.0" z="-8.0" />
+        <normal x="0" y="1.0" z="1.0" />
+        <texture u="1.0" v="0" />
+      </vertex>
+    </triangle>
+
+    <triangle name="TriangleGrid">
+      <scale x="1.0" y="1.0" z="1.0"/>
+      <rotation x="0" y="0" z="0"/>
+      <position x="0" y="0" z="0"/>
+
+      <!-- First Vertex -->
+      <vertex index="0" material="GridRed">
+        <position x="-3.0" y="-2.5" z="-5.0"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="0"/>
+      </vertex>
+
+      <!-- Second Vertex -->
+      <vertex index="1" material="GridBlue">
+        <position x="4.0" y="-2.5" z="-6.5"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="0" v="1.0"/>
+      </vertex>
+
+      <!-- Third Vertex -->
+      <vertex index="2" material="GridGreen">
+        <position x="-9.0" y="-10" z="-60"/>
+        <normal x="0" y="0" z="0"/>
+        <texture u="1.0" v="0"/>
+      </vertex>
+    </triangle>
+
+  </object_list>
+  <light_list>
+    <!-- Light Description, Color & Position -->
+    <light>
+      <color red="5" green="5" blue="5"/>
+      <position x="0" y="4.0" z="15.0"/>
+      <attenuation constant="10" linear="03" quadratic="00"/>
+    </light>
+  </light_list>
+</scene>
